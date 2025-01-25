@@ -12,6 +12,21 @@ public class EnemyShot : MonoBehaviour
         bubbleMat = GetComponent<MeshRenderer>().material;
     }
 
+    private void Update()
+    {
+        Ray ray = new Ray(transform.position, Vector3.down);
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
+        {
+            if (hit.collider.tag == "Floor")
+            {
+                if (hit.collider.GetComponent<CleaningTest>() is CleaningTest cleaning)
+                {
+                    cleaning?.Dirtify(transform.position, hit.point, Radius);
+                }
+            }
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))

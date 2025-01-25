@@ -35,6 +35,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_dodging)
         {
+            Ray ray = new Ray(transform.position, Vector3.down);
+            if (Physics.Raycast(ray, out RaycastHit hitFloor, 100f))
+            {
+                if (hitFloor.collider.tag == "Floor")
+                {
+                    if (hitFloor.collider.GetComponent<CleaningTest>() is CleaningTest cleaning)
+                    {
+                        cleaning?.Clean(transform.position, hitFloor.point, 10);
+                    }
+                }
+            }
             return;
         }
 
