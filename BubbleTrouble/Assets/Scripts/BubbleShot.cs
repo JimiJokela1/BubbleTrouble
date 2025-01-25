@@ -13,6 +13,21 @@ public class BubbleShot : MonoBehaviour
         bubbleMat = GetComponent<MeshRenderer>().material;
     }
 
+    private void Update()
+    {
+        Ray ray = new Ray(transform.position, Vector3.down);
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
+        {
+            if (hit.collider.tag == "Floor")
+            {
+                if (hit.collider.GetComponent<CleaningTest>() is CleaningTest cleaning)
+                {
+                    cleaning?.Clean(transform.position, hit.point, CleanRadius);
+                }
+            }
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
