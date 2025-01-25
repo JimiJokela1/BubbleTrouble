@@ -6,6 +6,8 @@ public class PlayerShooting : MonoBehaviour
     public Transform BubbleShotSpawnPoint;
 
     public int BubbleShotCount = 10;
+    public float BubbleShotInterval = 0.1f;
+    private float BubbleShotTimer = 0f;
 
     public float BubbleShotSpeedMin = 10f;
     
@@ -13,9 +15,15 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        BubbleShotTimer += Time.deltaTime;
+
+        if (BubbleShotTimer > BubbleShotInterval)
         {
-            ShootBubbleShot();
+            BubbleShotTimer = 0;
+            if (Input.GetMouseButton(0))
+            {
+                ShootBubbleShot();
+            }
         }
     }
 

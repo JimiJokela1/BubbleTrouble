@@ -290,9 +290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BubbleShotPrefab: {fileID: 7996958283591525595, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
   BubbleShotSpawnPoint: {fileID: 7136009929798849474}
-  BubbleShotCount: 10
-  BubbleShotSpeedMin: 10
-  BubbleShotSpeedMax: 20
+  BubbleShotCount: 1
+  BubbleShotInterval: 0.1
+  BubbleShotSpeedMin: 2
+  BubbleShotSpeedMax: 5
 --- !u!1001 &8401434879036357970
 PrefabInstance:
   m_ObjectHideFlags: 0
