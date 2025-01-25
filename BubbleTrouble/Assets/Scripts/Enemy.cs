@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
 
     private Rigidbody rb;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         _followPlayerSpeed = FollowPlayerStartSpeed;

@@ -28,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
     
     private void SpawnEnemy()
     {
-        GameObject enemy = Instantiate(EnemyPrefab, transform.position - Vector3.down * 2f, Quaternion.identity);
+        GameObject enemy = Instantiate(EnemyPrefab, transform.position + Vector3.down * 2f, Quaternion.identity);
 
         enemy.GetComponent<Enemy>().StartEmerge();
     }
