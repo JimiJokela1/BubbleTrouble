@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
     public Transform ShotSpawnPoint;
     public float ShotSpeed = 10f;
     public float ShotChance = 5f;
+    public float ShotCooldown = 1.5f;
+    private float _shotTimer = 0f;
 
     public AIType AI = AIType.Shooter;
 
@@ -14,6 +16,19 @@ public class Enemy : MonoBehaviour
     private Vector3 _randomDasherMovement;
     private float _randomDasherTimer = 0f;
 
+    public float FollowPlayerStartSpeed = 1f;
+    private float _followPlayerSpeed = 0f;
+    public float FollowPlayerAcceleration = 1f;
+    public int TouchDamage = 10;
+
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        _followPlayerSpeed = FollowPlayerStartSpeed;
+    }
+
     public enum AIType
     {
         Shooter,
@@ -21,26 +36,36 @@ public class Enemy : MonoBehaviour
         FollowPlayer
     }
 
-    void Update()
+    private void Stun()
+    {
+        _followPlayerSpeed = FollowPlayerStartSpeed;
+    }
+
+    void FixedUpdate()
     {
         transform.LookAt(PlayerMovement.Instance.transform.position);
 
         if (AI == AIType.Shooter)
         {
-            if (Random.Range(0, 100) < ShotChance)
+            _shotTimer += Time.fixedDeltaTime;
+            if (_shotTimer > ShotCooldown)
             {
-                ShootBubbleShot();
+                _shotTimer = 0;
+                if (Random.Range(0, 100) < ShotChance)
+                {
+                    ShootBubbleShot();
+                }
             }
         }
         else if (AI == AIType.RandomDasher)
         {
             // Move in random direction
-            _randomDasherTimer += Time.deltaTime;
+            _randomDasherTimer += Time.fixedDeltaTime;
             if (_randomDasherTimer > RandomDasherMovementInterval)
             {
                 _randomDasherTimer = 0;
                 _randomDasherMovement = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
-                transform.position += _randomDasherMovement * RandomDasherMovementDistance;
+                rb.MovePosition(rb.position + _randomDasherMovement * RandomDasherMovementDistance);
             }
 
             if (Random.Range(0, 100) < ShotChance)
@@ -53,14 +78,15 @@ public class Enemy : MonoBehaviour
             // Move towards player
             Vector3 direction = (PlayerMovement.Instance.transform.position - transform.position).normalized;
             direction.y = 0;
-            transform.position += direction * Time.deltaTime;
+            direction *= _followPlayerSpeed;
+            _followPlayerSpeed += FollowPlayerAcceleration * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + direction * Time.fixedDeltaTime);
             
             if (Random.Range(0, 100) < ShotChance)
             {
                 ShootBubbleShot();
             }
         }
-
     }
 
     void ShootBubbleShot()
@@ -69,7 +95,7 @@ public class Enemy : MonoBehaviour
         Rigidbody rb = bubbleShot.GetComponent<Rigidbody>();
         // Get random vector inside a 10 degree cone
         Vector3 direction = (PlayerMovement.Instance.transform.position - transform.position).normalized;
-        direction = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0) * direction;
+        direction = Quaternion.Euler(0, Random.Range(-10, 10), 0) * direction;
 
         rb.linearVelocity = direction * ShotSpeed;
     }
@@ -78,5 +104,14 @@ public class Enemy : MonoBehaviour
     {
         // Destroy self
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerMovement.Instance.TakeDamage(TouchDamage);
+            Stun();
+        }
     }
 }

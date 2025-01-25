@@ -20,6 +20,12 @@ public class EnemyShot : MonoBehaviour
             StartCoroutine(FadeOut());
         }
 
+        if (collision.gameObject.CompareTag("PlayerShot"))
+        {
+            StartCoroutine(FadeOut());
+            collision.gameObject.GetComponent<BubbleShot>().StartFadeOut();
+        }
+
         if (collision.gameObject.CompareTag("Wall"))
         {
             StartCoroutine(FadeOut());

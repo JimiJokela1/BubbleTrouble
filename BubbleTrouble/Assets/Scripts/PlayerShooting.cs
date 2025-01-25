@@ -35,7 +35,7 @@ public class PlayerShooting : MonoBehaviour
             Rigidbody rb = bubbleShot.GetComponent<Rigidbody>();
             // Get random vector inside a 10 degree cone
             Vector3 direction = bubbleShot.transform.forward;
-            direction = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0) * direction;
+            direction = Quaternion.Euler(0, Random.Range(-10, 10), 0) * direction;
 
             rb.linearVelocity = direction * Random.Range(BubbleShotSpeedMin, BubbleShotSpeedMax);
         }
