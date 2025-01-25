@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public float DodgeTime;
 
     public int Health = 100;
+
+    public VisualEffect slideBubblesVFX;
 
     public static PlayerMovement Instance { get; internal set; }
 
@@ -54,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     void DodgeRoll()
     {
+        slideBubblesVFX.SendEvent("OnSlide");
         _dodgeVector = transform.forward;
         _dodging = true;
     }
@@ -71,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
                 _dodging = false;
                 _dodgeTimer = 0f;
                 rb.linearVelocity = Vector3.zero;
+                slideBubblesVFX.SendEvent("OnSlideEnd");
             }
             return;
         }
