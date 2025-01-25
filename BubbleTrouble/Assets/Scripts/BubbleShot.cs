@@ -21,6 +21,12 @@ public class BubbleShot : MonoBehaviour
             StartCoroutine(FadeOut());
         }
 
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            collision.gameObject.GetComponent<Boss>().TakeDamage(Damage);
+            StartCoroutine(FadeOut());
+        }
+
         if (collision.gameObject.CompareTag("Wall"))
         {
             StartCoroutine(FadeOut());

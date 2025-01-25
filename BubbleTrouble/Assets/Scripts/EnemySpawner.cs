@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -18,5 +19,10 @@ public class EnemySpawner : MonoBehaviour
             _enemiesSpawned++;
             Instantiate(EnemyPrefab, transform.position, Quaternion.identity);
         }
+    }
+
+    public void ResetAmount()
+    {
+        _enemiesSpawned = 0;
     }
 }
