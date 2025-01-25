@@ -4,6 +4,6 @@ public class EnemyBodyCollide : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        GetComponentInParent<Enemy>().OnBodyCollide(collision);
+        //GetComponentInParent<Enemy>().OnBodyCollide(collision);
     }
 }

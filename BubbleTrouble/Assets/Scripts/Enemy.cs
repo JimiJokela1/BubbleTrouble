@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponentInChildren<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         _followPlayerSpeed = FollowPlayerStartSpeed;
     }
 
@@ -106,7 +106,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    internal void OnBodyCollide(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
