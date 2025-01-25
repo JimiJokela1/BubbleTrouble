@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - Wall
   - PlayerShot
+  - Boss
   layers:
   - Default
   - TransparentFX
