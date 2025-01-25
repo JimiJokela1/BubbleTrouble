@@ -12,13 +12,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 711532c8813578b4aa223f7e34c8bcf7, type: 2}
+    - target: {fileID: 1962232062991321145, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
+      propertyPath: AI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8598767060382042936, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy4 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.8
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.9
+      value: 5.35
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalRotation.w
