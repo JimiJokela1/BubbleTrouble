@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
         Rigidbody rb = bubbleShot.GetComponent<Rigidbody>();
         // Get random vector inside a 10 degree cone
         Vector3 direction = (PlayerMovement.Instance.transform.position - transform.position).normalized;
-        direction = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0) * direction;
+        direction = Quaternion.Euler(0, Random.Range(-10, 10), 0) * direction;
 
         rb.linearVelocity = direction * ShotSpeed;
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -49,5 +50,10 @@ public class BubbleShot : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    internal void StartFadeOut()
+    {
+        StartCoroutine(FadeOut());
     }
 }

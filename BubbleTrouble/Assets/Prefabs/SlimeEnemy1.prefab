@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShotPrefab: {fileID: 7996958283591525595, guid: a32608f3b8885244f8218500bc5c95c6, type: 3}
   ShotSpawnPoint: {fileID: 2682431601111111876}
-  ShotSpeed: 3
+  ShotSpeed: 7
   ShotChance: 5
   AI: 0
   RandomDasherMovementInterval: 1

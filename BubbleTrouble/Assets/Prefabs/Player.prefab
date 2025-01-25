@@ -294,8 +294,8 @@ MonoBehaviour:
   BubbleShotSpawnPoint: {fileID: 7136009929798849474}
   BubbleShotCount: 1
   BubbleShotInterval: 0.1
-  BubbleShotSpeedMin: 2
-  BubbleShotSpeedMax: 5
+  BubbleShotSpeedMin: 5
+  BubbleShotSpeedMax: 12
 --- !u!1001 &2809637077386499033
 PrefabInstance:
   m_ObjectHideFlags: 0

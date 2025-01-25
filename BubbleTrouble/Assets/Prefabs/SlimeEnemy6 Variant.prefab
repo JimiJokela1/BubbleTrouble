@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: AI
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 716809473162410896, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: ShotChance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2129152086272098398, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
