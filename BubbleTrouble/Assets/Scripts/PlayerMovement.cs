@@ -12,9 +12,12 @@ public class PlayerMovement : MonoBehaviour
     public float DodgeDistance;
     public float DodgeTime;
 
+    public static PlayerMovement Instance { get; internal set; }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Instance = this;
     }
     
     void Update()
