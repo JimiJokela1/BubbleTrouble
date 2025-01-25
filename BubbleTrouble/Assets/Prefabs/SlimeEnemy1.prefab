@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2682431601111111876}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,6 +39,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9091112994186226456, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.8
@@ -80,16 +84,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -7069297261233299625, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6804224529849698862, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388680750337458582, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2821761757288588400, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1689137151616660966, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501120433808574713, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790183945725220954, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905609870639353253, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: fc556f1fa45a718498cbf5f7d1be3576, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -130,8 +178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShotPrefab: {fileID: 7996958283591525595, guid: a32608f3b8885244f8218500bc5c95c6, type: 3}
   ShotSpawnPoint: {fileID: 2682431601111111876}
-  ShotSpeed: 10
+  ShotSpeed: 3
   ShotChance: 5
+  AI: 0
+  RandomDasherMovementInterval: 1
+  RandomDasherMovementDistance: 3
 --- !u!95 &7270843093695819737
 Animator:
   serializedVersion: 7
