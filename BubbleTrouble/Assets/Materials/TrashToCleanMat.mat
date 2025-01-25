@@ -86,6 +86,7 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
+    - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors: []
