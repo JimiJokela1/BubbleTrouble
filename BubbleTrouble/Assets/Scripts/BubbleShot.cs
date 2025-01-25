@@ -43,7 +43,7 @@ public class BubbleShot : MonoBehaviour
         float fade = 0;
         while (fade < 1)
         {
-            fade += Time.deltaTime * 5;
+            fade += Time.deltaTime * 10;
             bubbleMat.SetFloat("_Dissolve", fade);
             yield return null;
         }
