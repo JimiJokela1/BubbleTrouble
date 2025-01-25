@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float DodgeDistance;
     public float DodgeTime;
+
+    public int Health = 100;
 
     public static PlayerMovement Instance { get; internal set; }
 
@@ -76,5 +79,20 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(_movement);
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+
+        if (Health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
