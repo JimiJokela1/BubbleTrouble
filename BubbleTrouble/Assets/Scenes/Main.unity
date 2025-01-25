@@ -240,63 +240,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1001 &623764228
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.40645
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.916
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.8009828
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057834216229968349, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7996958283591525595, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
-      propertyPath: m_Name
-      value: BubbleShot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
 --- !u!1 &743699875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3134339736620078175, guid: b87362db829471b4bbed893a4492302e, type: 3}
@@ -684,4 +627,3 @@ SceneRoots:
   - {fileID: 8220463254239865254}
   - {fileID: 9167282151088120049}
   - {fileID: 557425879603312160}
-  - {fileID: 623764228}
