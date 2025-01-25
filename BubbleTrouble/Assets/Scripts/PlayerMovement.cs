@@ -54,8 +54,9 @@ public class PlayerMovement : MonoBehaviour
 
     void DodgeRoll()
     {
-        _dodgeVector = transform.forward;
+        _dodgeVector = _movement;
         _dodging = true;
+        rb.linearVelocity = _dodgeVector.normalized * DodgeDistance;
     }
 
     void FixedUpdate()
@@ -63,14 +64,13 @@ public class PlayerMovement : MonoBehaviour
         // Dodge movement
         if (_dodging)
         {
-            rb.linearVelocity = _dodgeVector.normalized * DodgeDistance * _dodgeTimer / DodgeTime;
             _dodgeTimer += Time.fixedDeltaTime;
 
             if (_dodgeTimer >= DodgeTime)
             {
                 _dodging = false;
                 _dodgeTimer = 0f;
-                rb.linearVelocity = Vector3.zero;
+                // rb.linearVelocity = Vector3.zero;
             }
             return;
         }
