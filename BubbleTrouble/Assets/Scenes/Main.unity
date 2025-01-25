@@ -411,25 +411,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1853186268882064eabbd9089eae600d, type: 3}
---- !u!1 &743699875 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3134339736620078175, guid: b87362db829471b4bbed893a4492302e, type: 3}
-  m_PrefabInstance: {fileID: 9167282151088120049}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &743699880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743699875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d59b9e6c41095a4f9d286621904ec58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderTexture: {fileID: 8400000, guid: 9549a6c2afd62e444b294b567b0417ac, type: 2}
-  cleanMat: {fileID: 2100000, guid: d5dc720897ec47c49bb8d8162fa20021, type: 2}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,14 +753,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 584621754884149326, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 3134339736620078175, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_TagString
-      value: Floor
-      objectReference: {fileID: 0}
     - target: {fileID: 5784946970094290190, guid: b87362db829471b4bbed893a4492302e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -820,45 +793,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6231042424590402300, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d5dc720897ec47c49bb8d8162fa20021, type: 2}
-    - target: {fileID: 7249566167506755657, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.4237
-      objectReference: {fileID: 0}
-    - target: {fileID: 7249566167506755657, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.4237
-      objectReference: {fileID: 0}
-    - target: {fileID: 7249566167506755657, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.4237
-      objectReference: {fileID: 0}
     - target: {fileID: 7625037682134892964, guid: b87362db829471b4bbed893a4492302e, type: 3}
       propertyPath: m_Name
       value: TestLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 7628944543422126938, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 8223743084004676777, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 8328740664472952516, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3134339736620078175, guid: b87362db829471b4bbed893a4492302e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 743699880}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b87362db829471b4bbed893a4492302e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
