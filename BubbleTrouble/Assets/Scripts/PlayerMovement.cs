@@ -25,7 +25,12 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Instance = this;
     }
-    
+
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 100, 20), "Health: " + Health);
+    }
+
     void Update()
     {
         if (_dodging)

@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeEnemy6 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8955824492506643969, guid: 2dcb19418e7480f4b83f62cd0b809e9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187,6 +191,10 @@ PrefabInstance:
     - target: {fileID: 8598767060382042936, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8598767060382042936, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,6 +241,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
+--- !u!1001 &406938830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30054575
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9537674
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 145.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 458577980023081644, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 943190292359008278, guid: 1853186268882064eabbd9089eae600d, type: 3}
+      propertyPath: m_Name
+      value: SlimeEnemy4 Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1853186268882064eabbd9089eae600d, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +476,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1853186268882064eabbd9089eae600d, type: 3}
+--- !u!1001 &758709697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7322101840670554257, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_Name
+      value: SlimeEnemy5 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30054575
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9537674
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 145.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986716644092584491, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58a3a82d1296b6e438231a7feff30235, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeEnemy2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5705447900276736916, guid: 021daf802a8e8b04e93bcb9eeaf3f29b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -585,6 +711,10 @@ PrefabInstance:
     - target: {fileID: 3666979106749666931, guid: 6bdd6130bfc12e34eaa9a72704f7c0f5, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666979106749666931, guid: 6bdd6130bfc12e34eaa9a72704f7c0f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4154688016937880777, guid: 6bdd6130bfc12e34eaa9a72704f7c0f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -815,5 +945,7 @@ SceneRoots:
   - {fileID: 1377576156}
   - {fileID: 393964960}
   - {fileID: 595830578}
+  - {fileID: 406938830}
   - {fileID: 1944228519}
+  - {fileID: 758709697}
   - {fileID: 149530986}
