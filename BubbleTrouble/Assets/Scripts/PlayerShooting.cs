@@ -5,7 +5,11 @@ public class PlayerShooting : MonoBehaviour
     public GameObject BubbleShotPrefab;
     public Transform BubbleShotSpawnPoint;
 
-    public float BubbleShotSpeed = 10f;
+    public int BubbleShotCount = 10;
+
+    public float BubbleShotSpeedMin = 10f;
+    
+    public float BubbleShotSpeedMax = 20f;
 
     void Update()
     {
@@ -17,16 +21,15 @@ public class PlayerShooting : MonoBehaviour
 
     void ShootBubbleShot()
     {
-        GameObject bubbleShot = Instantiate(BubbleShotPrefab, BubbleShotSpawnPoint.position, BubbleShotSpawnPoint.rotation);
-        Rigidbody rb = bubbleShot.GetComponent<Rigidbody>();
-        // Get random vector inside a 10 degree cone
-        Vector3 randomVector = Random.insideUnitSphere;
-        // Limit random vector to a 10 degree cone
-        randomVector.y = Mathf.Abs(randomVector.y);
-        randomVector.Normalize();
-        // Apply random vector to BubbleShotSpawnPoint.forward
-        bubbleShot.transform.forward = randomVector;
+        for (int i = 0; i < BubbleShotCount; i++)
+        {
+            GameObject bubbleShot = Instantiate(BubbleShotPrefab, BubbleShotSpawnPoint.position, BubbleShotSpawnPoint.rotation);
+            Rigidbody rb = bubbleShot.GetComponent<Rigidbody>();
+            // Get random vector inside a 10 degree cone
+            Vector3 direction = bubbleShot.transform.forward;
+            direction = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0) * direction;
 
-        rb.linearVelocity = bubbleShot.transform.forward * BubbleShotSpeed;
+            rb.linearVelocity = direction * Random.Range(BubbleShotSpeedMin, BubbleShotSpeedMax);
+        }
     }
 }

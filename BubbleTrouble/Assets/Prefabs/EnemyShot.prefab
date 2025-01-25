@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8201658093460351579}
   - component: {fileID: -5131502047345698684}
   m_Layer: 6
-  m_Name: BubbleShot
+  m_Name: EnemyShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
