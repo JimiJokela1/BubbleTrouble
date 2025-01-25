@@ -10,8 +10,6 @@ public class CleaningTest : MonoBehaviour
 
     Texture2D texture;
 
-    private bool onTop = false;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,20 +19,10 @@ public class CleaningTest : MonoBehaviour
         texture.Apply();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(onTop && Input.GetMouseButton(0))
-        {
-            Clean();
-        }
-        
-    }
-
-    public void Clean()
+    public void Clean(Vector3 shotPos, Vector3 hitPoint, int radius)
     {
         RenderTexture.active = renderTexture;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(shotPos, hitPoint - shotPos);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100))
@@ -43,13 +31,14 @@ public class CleaningTest : MonoBehaviour
             int x = (int)Mathf.Lerp(0, renderTexture.width, hit.textureCoord.x);
             int y = (int)Mathf.Lerp(0, renderTexture.height, hit.textureCoord.y);
             // texture.SetPixel(x, y, new Color(1, 0, 0));
-            DrawCircle(texture, new Color(1, 1, 1), x, y);
+            DrawCircle(texture, new Color(1, 1, 1), x, y, radius);
         }
 
         texture.Apply();
         cleanMat.SetTexture("_RenderTexture", texture);
         RenderTexture.active = null;
     }
+
     public static void DrawCircle( Texture2D tex, Color color, int x, int y, int radius = 10)
     {
         float rSquared = radius * radius;
@@ -60,13 +49,23 @@ public class CleaningTest : MonoBehaviour
                 tex.SetPixel(u, v, color);
     }
 
-    private void OnMouseEnter()
+    public void Dirtify(Vector3 shotPos, Vector3 hitPoint, int radius)
     {
-        onTop = true;
-    }
+        RenderTexture.active = renderTexture;
+        Ray ray = new Ray(shotPos, hitPoint - shotPos);
+        RaycastHit hit;
 
-    private void OnMouseExit()
-    {
-        onTop = false;
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Debug.Log(hit.textureCoord);
+            int x = (int)Mathf.Lerp(0, renderTexture.width, hit.textureCoord.x);
+            int y = (int)Mathf.Lerp(0, renderTexture.height, hit.textureCoord.y);
+            // texture.SetPixel(x, y, new Color(1, 0, 0));
+            DrawCircle(texture, new Color(0, 0, 0), x, y, radius);
+        }
+
+        texture.Apply();
+        cleanMat.SetTexture("_RenderTexture", texture);
+        RenderTexture.active = null;
     }
 }

@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
 
         // Move towards player
         Vector3 direction = (PlayerMovement.Instance.transform.position - transform.position).normalized;
+        direction.y = 0;
         transform.position += direction * Time.deltaTime;
     }
 
@@ -30,5 +31,11 @@ public class Enemy : MonoBehaviour
         direction = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0) * direction;
 
         rb.linearVelocity = direction * ShotSpeed;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        // Destroy self
+        Destroy(gameObject);
     }
 }

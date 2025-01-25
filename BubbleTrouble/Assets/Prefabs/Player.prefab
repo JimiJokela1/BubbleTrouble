@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 2575969768803772608}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   moveSpeed: 100
   DodgeDistance: 60
   DodgeTime: 0.2
+  Health: 100
 --- !u!54 &6190219480786591637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -288,4 +289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BubbleShotPrefab: {fileID: 7996958283591525595, guid: 52f35ddad659e0e4a9de7770302180d8, type: 3}
   BubbleShotSpawnPoint: {fileID: 7136009929798849474}
-  BubbleShotSpeed: 10
+  BubbleShotCount: 10
+  BubbleShotSpeedMin: 10
+  BubbleShotSpeedMax: 20
