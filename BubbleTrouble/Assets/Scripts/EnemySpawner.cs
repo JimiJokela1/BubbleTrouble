@@ -16,7 +16,14 @@ public class EnemySpawner : MonoBehaviour
         {
             _spawnTimer = 0;
             _enemiesSpawned++;
-            Instantiate(EnemyPrefab, transform.position, Quaternion.identity);
+            SpawnEnemy();
         }
+    }
+
+    private void SpawnEnemy()
+    {
+        GameObject enemy = Instantiate(EnemyPrefab, transform.position - Vector3.down * 2f, Quaternion.identity);
+
+        enemy.GetComponent<Enemy>().StartEmerge();
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -113,5 +114,23 @@ public class Enemy : MonoBehaviour
             PlayerMovement.Instance.TakeDamage(TouchDamage);
             Stun();
         }
+    }
+
+    public void StartEmerge()
+    {
+        StartCoroutine(Emerge());
+    }
+
+    IEnumerator Emerge()
+    {
+        rb.isKinematic = true;
+
+        while (transform.position.y < 1)
+        {
+            transform.position += Vector3.up * 2 * Time.deltaTime;
+            yield return null;
+        }
+
+        rb.isKinematic = false;
     }
 }

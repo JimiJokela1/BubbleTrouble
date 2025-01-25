@@ -251,6 +251,7 @@ MonoBehaviour:
   DodgeTime: 0.2
   Health: 100
   slideBubblesVFX: {fileID: 1787806042576462208}
+  ResetPos: {x: 0, y: 1, z: -8}
 --- !u!54 &6190219480786591637
 Rigidbody:
   m_ObjectHideFlags: 0

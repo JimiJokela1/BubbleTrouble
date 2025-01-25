@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 
 public class PlayerMovement : MonoBehaviour
@@ -18,17 +19,26 @@ public class PlayerMovement : MonoBehaviour
 
     public VisualEffect slideBubblesVFX;
 
+    public Vector3 ResetPos;
+
     public static PlayerMovement Instance { get; internal set; }
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         rb = GetComponent<Rigidbody>();
         Instance = this;
+        SceneManager.activeSceneChanged += OnSceneLoaded;
     }
 
     private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 100, 20), "Health: " + Health);
+    }
+
+    void OnSceneLoaded(Scene scene, Scene scene2)
+    {
+        transform.position = ResetPos;
     }
 
     void Update()
