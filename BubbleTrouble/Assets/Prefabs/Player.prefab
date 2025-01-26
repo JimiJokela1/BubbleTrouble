@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe39cf298fc7b7140ba4c5d3d43eae20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
+  moveSpeed: 65
   DodgeDistance: 60
   DodgeTime: 0.2
   Health: 100

@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main2.unity
     guid: 38d23033e6e018d4995583444a5358a4
+  - enabled: 1
+    path: "Assets/Scenes/Kent\xE4t/Level_0.unity"
+    guid: 09c09878bef6d9b44808d8cec7d76d37
+  - enabled: 1
+    path: "Assets/Scenes/Kent\xE4t/Level_1.unity"
+    guid: 81b54ebd58842b049bb771182b5704ca
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
