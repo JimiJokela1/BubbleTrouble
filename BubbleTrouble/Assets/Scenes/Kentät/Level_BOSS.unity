@@ -4389,6 +4389,7 @@ MonoBehaviour:
   - {fileID: 635916952}
   - {fileID: 456695970}
   hidingTime: 3
+  deathVFX: {fileID: 5692084486552361803, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
 --- !u!4 &1802610811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2632950bb5889a44aaa1f4d41ec65ee, type: 3}
