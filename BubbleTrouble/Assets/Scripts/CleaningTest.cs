@@ -10,6 +10,8 @@ public class CleaningTest : MonoBehaviour
 
     Texture2D texture;
 
+    private bool needUpdate = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +19,16 @@ public class CleaningTest : MonoBehaviour
         Color[] pixels = Enumerable.Repeat(Color.black, renderTexture.width * renderTexture.height).ToArray();
         texture.SetPixels(pixels);
         texture.Apply();
+    }
+
+    private void LateUpdate()
+    {
+        if (needUpdate)
+        {
+            needUpdate = false;
+            texture.Apply();
+            cleanMat.SetTexture("_RenderTexture", texture);
+        }
     }
 
     public void Clean(Vector3 shotPos, Vector3 hitPoint, int radius)
@@ -34,8 +46,9 @@ public class CleaningTest : MonoBehaviour
             DrawCircle(texture, new Color(1, 1, 1), x, y, radius);
         }
 
-        texture.Apply();
-        cleanMat.SetTexture("_RenderTexture", texture);
+        needUpdate = true;
+        // texture.Apply();
+        // cleanMat.SetTexture("_RenderTexture", texture);
         RenderTexture.active = null;
     }
 
@@ -57,15 +70,16 @@ public class CleaningTest : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-            Debug.Log(hit.textureCoord);
+            //Debug.Log(hit.textureCoord);
             int x = (int)Mathf.Lerp(0, renderTexture.width, hit.textureCoord.x);
             int y = (int)Mathf.Lerp(0, renderTexture.height, hit.textureCoord.y);
             // texture.SetPixel(x, y, new Color(1, 0, 0));
             DrawCircle(texture, new Color(0, 0, 0), x, y, radius);
         }
 
-        texture.Apply();
-        cleanMat.SetTexture("_RenderTexture", texture);
+        needUpdate = true;
+        // texture.Apply();
+        // cleanMat.SetTexture("_RenderTexture", texture);
         RenderTexture.active = null;
     }
 }
