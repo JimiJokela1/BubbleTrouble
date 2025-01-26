@@ -248,10 +248,10 @@ public class Boss : MonoBehaviour
 
     IEnumerator Die()
     {
-        Instantiate(deathVFX, ShotSpawnPoint.position, Quaternion.identity);
+        var deathfx= Instantiate(deathVFX, ShotSpawnPoint.position, Quaternion.identity);
         Debug.Log("Boss is Ded!");
         const float timeToDie = 10f;
-        const float floatAmount = 12f;
+        const float floatAmount = 8f;
 
 
         Vector3 originOrigin = transform.position;
@@ -267,6 +267,7 @@ public class Boss : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+        Destroy(deathfx);
         
         FindFirstObjectByType<GameOverUI>().ShowVictory();
     }
