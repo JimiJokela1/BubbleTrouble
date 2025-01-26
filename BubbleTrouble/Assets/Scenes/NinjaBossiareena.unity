@@ -1316,6 +1316,7 @@ MonoBehaviour:
   - {fileID: 1965396258}
   - {fileID: 297411915}
   hidingTime: 3
+  deathVFX: {fileID: 5692084486552361803, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
 --- !u!135 &1909153251
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1688,6 +1689,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &59586520336094747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1046548113092213147, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_Name
+      value: BloodSplatter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046548113092213147, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886093888400267347, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085900675280657136, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8a57b1b93a1a6145867c3e6933fa9c3, type: 3}
 --- !u!1001 &7932872280499593790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1886,3 +1952,4 @@ SceneRoots:
   - {fileID: 352776014}
   - {fileID: 1168139554}
   - {fileID: 748817017}
+  - {fileID: 59586520336094747}

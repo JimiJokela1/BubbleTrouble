@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.VFX;
 using Random = UnityEngine.Random;
 
 enum BossState
@@ -23,33 +24,32 @@ public class Boss : MonoBehaviour
 
     public int MaxHealth = 10000;
     public int CurrentHealth { get; private set; }
-    
+
     private float _timer = 0f;
-    
+
     BossState _state = BossState.ArcShots;
 
-    
-    [Header("RapidShot")]
-    public int RapidTimesToShoot = 15;
+
+    [Header("RapidShot")] public int RapidTimesToShoot = 15;
     public float TimeBetweenRapidShots = 1f;
-    
-    [Header("ArcShot")]
-    public float TimeBetweenWaves = 1f;
+
+    [Header("ArcShot")] public float TimeBetweenWaves = 1f;
     public int ArcTimesToShoot = 3;
     public int arcShots = 9;
-    [Header("ScatterShot")]
-    public int ScatterTimesToShoot = 3;
+    [Header("ScatterShot")] public int ScatterTimesToShoot = 3;
     public float ScatterShotSpeed = 10f;
     public int scatterShots = 50;
-    
-    
+
+
     private int _timesShot = 0;
-    
-    [Header("Hiding")]
-    public Transform hidingSpot;
+
+    [Header("Hiding")] public Transform hidingSpot;
     public List<EnemySpawner> spawners;
     private Coroutine _hidingCoroutine;
-    public float hidingTime = 3f; 
+    public float hidingTime = 3f;
+
+    public VisualEffect deathVFX;
+    private bool _dying;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -84,7 +84,7 @@ public class Boss : MonoBehaviour
         {
             timesToShoot = ArcTimesToShoot;
         }
-        
+
         if (_timer >= timeBetweenShots)
         {
             _timer = 0;
@@ -96,7 +96,8 @@ public class Boss : MonoBehaviour
             else if (_state == BossState.ScatterShots)
             {
                 ShootBubbleShots();
-            }else if (_state == BossState.RapidFire)
+            }
+            else if (_state == BossState.RapidFire)
             {
                 ShootBasicShot();
             }
@@ -104,8 +105,9 @@ public class Boss : MonoBehaviour
             {
                 ShootBubblesInArc();
             }
+
             _timesShot++;
-            if(_timesShot >= timesToShoot)
+            if (_timesShot >= timesToShoot)
             {
                 ChangeState();
             }
@@ -128,9 +130,10 @@ public class Boss : MonoBehaviour
 
             rb.linearVelocity = direction * ScatterShotSpeed;
         }
+
         ShotSpawnPoint.rotation = ogRotation;
     }
-    
+
     void ShootBubbleShots()
     {
         for (int i = 0; i < scatterShots; i++)
@@ -145,7 +148,7 @@ public class Boss : MonoBehaviour
             rb.linearVelocity = direction * ScatterShotSpeed;
         }
     }
-    
+
     void ShootBasicShot()
     {
         GameObject bubbleShot = Instantiate(ShotPrefab, ShotSpawnPoint.position, ShotSpawnPoint.rotation);
@@ -178,6 +181,7 @@ public class Boss : MonoBehaviour
             transform.position = Vector3.Lerp(originPoint, hidingSpot.position, t / hidingTime);
             yield return null;
         }
+
         foreach (var spawner in spawners)
         {
             spawner.gameObject.SetActive(true);
@@ -205,7 +209,7 @@ public class Boss : MonoBehaviour
                 break;
             }
         }
-        
+
         foreach (var spawner in spawners)
         {
             spawner.gameObject.SetActive(false);
@@ -228,22 +232,24 @@ public class Boss : MonoBehaviour
     {
         if (_hidingCoroutine != null)
             return;
-        
+
         CurrentHealth -= damage;
         Debug.Log("BossHealth:" + CurrentHealth);
-        if (CurrentHealth <= 0)
+        if (CurrentHealth <= 0 && !_dying)
         {
+            _dying = true;
             StartCoroutine(Die());
         }
     }
 
     IEnumerator Die()
     {
+        Instantiate(deathVFX, ShotSpawnPoint.position, Quaternion.identity);
         Debug.Log("Boss is Ded!");
         const float timeToDie = 10f;
         const float floatAmount = 12f;
 
-        
+
         Vector3 originOrigin = transform.position;
         Vector3 originDest = transform.position - (Vector3.up * floatAmount);
         Vector3 originPoint = transform.position;
@@ -255,9 +261,9 @@ public class Boss : MonoBehaviour
             originPoint = Vector3.Lerp(originOrigin, originDest, t / timeToDie);
             yield return new WaitForFixedUpdate();
         }
-        
+
         gameObject.SetActive(false);
-        
+
         //TODO: Trigger stage end
     }
 }
