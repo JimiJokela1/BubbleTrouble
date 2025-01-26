@@ -17,6 +17,11 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
+        if (GetComponent<PlayerMovement>().dead)
+        {
+            return;
+        }
+
         BubbleShotTimer += Time.deltaTime;
 
         if (BubbleShotTimer > BubbleShotInterval)

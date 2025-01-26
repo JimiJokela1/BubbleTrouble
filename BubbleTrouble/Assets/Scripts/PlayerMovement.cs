@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
@@ -23,9 +24,21 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement Instance { get; internal set; }
 
+    public bool dead = false;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        
+        FindObjectsByType<PlayerMovement>(sortMode: FindObjectsSortMode.None, findObjectsInactive: FindObjectsInactive.Include).ToList().ForEach((player) =>
+        {
+            if (player != this)
+            {
+                SceneManager.activeSceneChanged -= player.OnSceneLoaded;
+                Destroy(player.gameObject);
+            }
+        });
+
         rb = GetComponent<Rigidbody>();
         Instance = this;
         SceneManager.activeSceneChanged += OnSceneLoaded;
@@ -43,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (dead)
+        {
+            _movement = Vector3.zero;
+            return;
+        }
+
         if (_dodging)
         {
             Ray ray = new Ray(transform.position, Vector3.down);
@@ -124,6 +143,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        GetComponent<MeshRenderer>().enabled = false;
+        FindFirstObjectByType<GameOverUI>().ShowGameOver();
+        dead = true;
     }
 }

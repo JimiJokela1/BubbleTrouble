@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6386168426599199359}
   - component: {fileID: 2996574623219390538}
   - component: {fileID: 2187219034890639585}
+  - component: {fileID: 5085028138896046928}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -124,3 +125,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: 9549a6c2afd62e444b294b567b0417ac, type: 2}
   cleanMat: {fileID: 2100000, guid: d5dc720897ec47c49bb8d8162fa20021, type: 2}
+--- !u!114 &5085028138896046928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089323438968406754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d750542c1a95f4a9e33d493aeae9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

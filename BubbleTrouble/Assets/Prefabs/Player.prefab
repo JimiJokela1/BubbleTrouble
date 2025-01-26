@@ -250,7 +250,7 @@ MonoBehaviour:
   moveSpeed: 80
   DodgeDistance: 60
   DodgeTime: 0.2
-  Health: 100
+  Health: 30
   slideBubblesVFX: {fileID: 1787806042576462208}
   ResetPos: {x: 0, y: 1.526, z: -8}
 --- !u!54 &6190219480786591637
