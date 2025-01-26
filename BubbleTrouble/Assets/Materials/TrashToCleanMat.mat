@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DirtTexture:
-        m_Texture: {fileID: 2800000, guid: 2070e2af025427b40ac036fd6746cc93, type: 3}
+        m_Texture: {fileID: 2800000, guid: be01be61bb635494cab16393d5237306, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RenderTexture:
@@ -86,9 +86,11 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
+    - _ColorMinBrightness: 0.19
     - _NormalStrength: 1
     - _QueueControl: 1
     - _QueueOffset: 0
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 0.4433962, g: 0.34879357, b: 0.13176396, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
