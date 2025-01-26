@@ -32,8 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        Instantiate(healthBarCanvas);
         healthBar = GameObject.Find("PlayerHealthBar").GetComponent<Image>();
+        
         DontDestroyOnLoad(gameObject);
         
         FindObjectsByType<PlayerMovement>(sortMode: FindObjectsSortMode.None, findObjectsInactive: FindObjectsInactive.Include).ToList().ForEach((player) =>
@@ -140,6 +140,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (healthBar == null)
+        {
+            healthBar = GameObject.Find("PlayerHealthBar").GetComponent<Image>();
+        }
+        if (healthBar == null)
+        {
+            Debug.LogError("Health bar not found");
+            Die();
+            return;
+        }
         Health -= damage;
         healthBar.fillAmount = (float)Health / MaxHealth;
         if (Health <= 0)
@@ -153,5 +163,11 @@ public class PlayerMovement : MonoBehaviour
         GetComponentsInChildren<MeshRenderer>().ToList().ForEach((mesh) => mesh.enabled = false);
         FindFirstObjectByType<GameOverUI>().ShowGameOver();
         dead = true;
+    }
+
+    internal void SetHealth(int v)
+    {
+        Health = v;
+        MaxHealth = v;
     }
 }

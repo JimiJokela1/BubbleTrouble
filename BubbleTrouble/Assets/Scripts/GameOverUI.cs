@@ -6,7 +6,7 @@ public class GameOverUI : MonoBehaviour
     public GameObject GameOverUi;
     public GameObject VictoryUi;
 
-    private void Start()
+    private void Awake()
     {
         FindObjectsByType<GameOverUI>(sortMode: FindObjectsSortMode.None, findObjectsInactive: FindObjectsInactive.Include).ToList().ForEach((ui) =>
         {
@@ -22,9 +22,12 @@ public class GameOverUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (GameOverUi.activeSelf || VictoryUi.activeSelf)
         {
-            Restart();
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Restart();
+            }
         }
     }
 

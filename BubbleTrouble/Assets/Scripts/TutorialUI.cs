@@ -10,12 +10,13 @@ public class TutorialUI : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            FindFirstObjectByType<PlayerMovement>().Health = 100;
+            FindFirstObjectByType<PlayerMovement>().SetHealth(100);
+
         }
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            FindFirstObjectByType<PlayerMovement>().Health = 30;
+            FindFirstObjectByType<PlayerMovement>().SetHealth(30);
         }
     }
 }
