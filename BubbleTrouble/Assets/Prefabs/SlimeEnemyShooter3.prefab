@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2540619654794199189, guid: 021daf802a8e8b04e93bcb9eeaf3f29b, type: 3}
+      propertyPath: ShotSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2540619654794199189, guid: 021daf802a8e8b04e93bcb9eeaf3f29b, type: 3}
+      propertyPath: ShotCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3980270559033260891, guid: 021daf802a8e8b04e93bcb9eeaf3f29b, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
@@ -54,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705447900276736916, guid: 021daf802a8e8b04e93bcb9eeaf3f29b, type: 3}
       propertyPath: m_Name
-      value: SlimeEnemy3 Variant
+      value: SlimeEnemyShooter3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

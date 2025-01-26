@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8598767060382042936, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_Name
-      value: SlimeEnemy4 Variant
+      value: SlimeEnemyFollower2
       objectReference: {fileID: 0}
     - target: {fileID: 8943908865084658050, guid: 61744e37d4bfa5d4a88cb568a359e575, type: 3}
       propertyPath: m_LocalPosition.x
