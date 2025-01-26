@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour
     private float _followPlayerSpeed = 0f;
     public float FollowPlayerAcceleration = 1f;
     public int TouchDamage = 10;
+    
+    public float EmergeHeight = 1f;
 
     private Rigidbody rb;
 
@@ -131,7 +133,7 @@ public class Enemy : MonoBehaviour
     {
         rb.isKinematic = true;
 
-        while (transform.position.y < 1)
+        while (transform.position.y < EmergeHeight)
         {
             transform.position += Vector3.up * 2 * Time.deltaTime;
             yield return null;
