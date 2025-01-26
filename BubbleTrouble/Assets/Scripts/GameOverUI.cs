@@ -29,6 +29,11 @@ public class GameOverUI : MonoBehaviour
                 Restart();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void ShowGameOver()
