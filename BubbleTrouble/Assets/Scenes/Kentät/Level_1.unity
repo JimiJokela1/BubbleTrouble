@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wallCorner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -227,6 +231,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -414,6 +422,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -716,6 +728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -850,6 +866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -918,6 +938,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1118,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1252,6 +1280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1320,6 +1352,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1516,6 +1552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1646,6 +1686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1702,6 +1746,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
       propertyPath: m_Name
       value: pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1771,6 +1819,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1962,6 +2014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2084,6 +2140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2153,6 +2213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2209,6 +2273,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2279,6 +2347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2347,6 +2419,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled_broken (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2535,6 +2611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2592,6 +2672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2648,6 +2732,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2718,6 +2806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2787,6 +2879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2843,6 +2939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2912,6 +3012,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3083,6 +3187,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
       propertyPath: m_Name
       value: wallCorner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3279,6 +3387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3347,6 +3459,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3515,6 +3631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3584,6 +3704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3640,6 +3764,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
       propertyPath: m_Name
       value: wallCorner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3710,6 +3838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3779,6 +3911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3835,6 +3971,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3893,6 +4033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3949,6 +4093,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4007,6 +4155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wallCorner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07ce4b5c12af9114abcca3fe669ae0d9, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4063,6 +4215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
       propertyPath: m_Name
       value: pillar (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4198,6 +4354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4266,6 +4426,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4446,6 +4610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4502,6 +4670,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4621,6 +4793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4689,6 +4865,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4759,6 +4939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4827,6 +5011,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5015,6 +5203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5083,6 +5275,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled_broken (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5206,6 +5402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5274,6 +5474,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5462,6 +5666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5596,6 +5804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5664,6 +5876,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled_broken (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5798,6 +6014,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6055,6 +6275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6254,6 +6478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6310,6 +6538,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6502,6 +6734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6558,6 +6794,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6693,6 +6933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6761,6 +7005,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
       propertyPath: m_Name
       value: bookcaseWideFilled (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6896,6 +7144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6952,6 +7204,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7022,6 +7278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseWideFilled (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8978c50c19082d548b92621bbc6b8cd1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7090,6 +7350,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7343,6 +7607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7412,6 +7680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7468,6 +7740,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7652,6 +7928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7786,6 +8066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7843,6 +8127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7899,6 +8187,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
       propertyPath: m_Name
       value: pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89e3e4b810de59a44afc43fc2cd2931e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8087,6 +8379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8222,6 +8518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8356,6 +8656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bookcaseFilled_broken (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdc63d6ff3ae41f45bc948c3910bd8e7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8412,6 +8716,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8470,6 +8778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8526,6 +8838,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
       propertyPath: m_Name
       value: wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbdcf55c6fd0c74dbe48d740bb7c582, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8781,6 +9097,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
       propertyPath: m_Name
       value: bookcaseFilled (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33388c776e89078449401dd1894998d6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

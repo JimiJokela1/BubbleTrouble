@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Die()
     {
-        GetComponent<MeshRenderer>().enabled = false;
+        GetComponentsInChildren<MeshRenderer>().ToList().ForEach((mesh) => mesh.enabled = false);
         FindFirstObjectByType<GameOverUI>().ShowGameOver();
         dead = true;
     }
