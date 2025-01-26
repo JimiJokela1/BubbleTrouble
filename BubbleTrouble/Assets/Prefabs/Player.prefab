@@ -253,6 +253,8 @@ MonoBehaviour:
   Health: 100
   slideBubblesVFX: {fileID: 1787806042576462208}
   ResetPos: {x: 0, y: 1.526, z: -8}
+  healthBar: {fileID: 0}
+  healthBarCanvas: {fileID: 380209450882294219, guid: 09c211c8047851e49ae9359581a2eb54, type: 3}
 --- !u!54 &6190219480786591637
 Rigidbody:
   m_ObjectHideFlags: 0

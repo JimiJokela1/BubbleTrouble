@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.VFX;
 
 public class PlayerMovement : MonoBehaviour
@@ -23,12 +24,19 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement Instance { get; internal set; }
 
+    public Image healthBar;
+    private int MaxHealth = 100;
+    public GameObject healthBarCanvas;
+
     void Start()
     {
+        Instantiate(healthBarCanvas);
+        healthBar = GameObject.Find("PlayerHealthBar").GetComponent<Image>();
         DontDestroyOnLoad(gameObject);
         rb = GetComponent<Rigidbody>();
         Instance = this;
         SceneManager.activeSceneChanged += OnSceneLoaded;
+        MaxHealth = Health;
     }
 
     private void OnGUI()
@@ -115,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health -= damage;
-
+        healthBar.fillAmount = (float)Health / MaxHealth;
         if (Health <= 0)
         {
             Die();

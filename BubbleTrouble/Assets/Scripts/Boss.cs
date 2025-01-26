@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using UnityEngine.VFX;
 using Random = UnityEngine.Random;
 
@@ -50,6 +51,8 @@ public class Boss : MonoBehaviour
 
     public VisualEffect deathVFX;
     private bool _dying;
+
+    public Image healthBar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -234,6 +237,7 @@ public class Boss : MonoBehaviour
             return;
 
         CurrentHealth -= damage;
+        healthBar.fillAmount = (float)CurrentHealth / MaxHealth;
         Debug.Log("BossHealth:" + CurrentHealth);
         if (CurrentHealth <= 0 && !_dying)
         {
