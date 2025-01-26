@@ -297,6 +297,7 @@ MonoBehaviour:
   BubbleShotInterval: 0.1
   BubbleShotSpeedMin: 5
   BubbleShotSpeedMax: 12
+  bubbleShotSound: {fileID: 8300000, guid: c00b4b9ee6d4dde448d25702fb36c840, type: 3}
 --- !u!1001 &2809637077386499033
 PrefabInstance:
   m_ObjectHideFlags: 0

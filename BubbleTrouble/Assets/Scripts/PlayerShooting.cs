@@ -13,6 +13,8 @@ public class PlayerShooting : MonoBehaviour
     
     public float BubbleShotSpeedMax = 20f;
 
+    public AudioClip bubbleShotSound;
+
     void Update()
     {
         BubbleShotTimer += Time.deltaTime;
@@ -38,6 +40,8 @@ public class PlayerShooting : MonoBehaviour
             direction = Quaternion.Euler(0, Random.Range(-10, 10), 0) * direction;
 
             rb.linearVelocity = direction * Random.Range(BubbleShotSpeedMin, BubbleShotSpeedMax);
+
+            AudioSource.PlayClipAtPoint(bubbleShotSound, transform.position);
         }
     }
 }

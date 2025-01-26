@@ -151,3 +151,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CleanRadius: 10
   Damage: 10
+  popSound: {fileID: 8300000, guid: 0346e944deea71b409d3c10299622bbb, type: 3}

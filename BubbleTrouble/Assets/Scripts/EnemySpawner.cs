@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     private int _enemiesSpawned = 0;
     private float _spawnTimer = 0f;
 
+    public AudioClip spawnSound;
+
     private void Update()
     {
         _spawnTimer += Time.deltaTime;
@@ -31,5 +33,7 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemy = Instantiate(EnemyPrefab, transform.position + Vector3.down * 2f, Quaternion.identity);
 
         enemy.GetComponent<Enemy>().StartEmerge();
+
+        AudioSource.PlayClipAtPoint(spawnSound, transform.position);
     }
 }

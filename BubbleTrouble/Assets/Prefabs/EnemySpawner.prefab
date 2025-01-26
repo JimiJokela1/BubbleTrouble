@@ -47,3 +47,4 @@ MonoBehaviour:
   SpawnInterval: 1
   EnemyPrefab: {fileID: 3666979106749666931, guid: 6bdd6130bfc12e34eaa9a72704f7c0f5, type: 3}
   TotalEnemies: 1
+  spawnSound: {fileID: 8300000, guid: bcbbc393545a8814a8be6795f65ea9f4, type: 3}

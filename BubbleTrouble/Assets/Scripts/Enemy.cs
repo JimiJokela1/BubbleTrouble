@@ -24,6 +24,9 @@ public class Enemy : MonoBehaviour
 
     private Rigidbody rb;
 
+    public AudioClip shotSound;
+    public AudioClip dieSound;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -99,10 +102,13 @@ public class Enemy : MonoBehaviour
         direction = Quaternion.Euler(0, Random.Range(-10, 10), 0) * direction;
 
         rb.linearVelocity = direction * ShotSpeed;
+
+        AudioSource.PlayClipAtPoint(shotSound, transform.position);
     }
 
     public void TakeDamage(int damage)
     {
+        AudioSource.PlayClipAtPoint(dieSound, transform.position);
         // Destroy self
         Destroy(gameObject);
     }

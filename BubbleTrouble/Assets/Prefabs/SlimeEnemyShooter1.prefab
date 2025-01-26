@@ -262,6 +262,8 @@ MonoBehaviour:
   FollowPlayerStartSpeed: 1
   FollowPlayerAcceleration: 1
   TouchDamage: 10
+  shotSound: {fileID: 8300000, guid: c00b4b9ee6d4dde448d25702fb36c840, type: 3}
+  dieSound: {fileID: 8300000, guid: bcbbc393545a8814a8be6795f65ea9f4, type: 3}
 --- !u!95 &7270843093695819737
 Animator:
   serializedVersion: 7

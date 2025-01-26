@@ -7,6 +7,8 @@ public class EnemyShot : MonoBehaviour
     public int Radius = 10;
     private Material bubbleMat;
 
+    public AudioClip popSound;
+
     private void Start()
     {
         bubbleMat = GetComponent<MeshRenderer>().material;
@@ -68,6 +70,8 @@ public class EnemyShot : MonoBehaviour
             bubbleMat.SetFloat("_Dissolve", fade);
             yield return null;
         }
+
+        AudioSource.PlayClipAtPoint(popSound, transform.position);
 
         Destroy(gameObject);
     }
