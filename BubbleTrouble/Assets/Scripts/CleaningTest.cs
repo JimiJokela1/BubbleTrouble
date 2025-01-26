@@ -19,6 +19,7 @@ public class CleaningTest : MonoBehaviour
         Color[] pixels = Enumerable.Repeat(Color.black, renderTexture.width * renderTexture.height).ToArray();
         texture.SetPixels(pixels);
         texture.Apply();
+        cleanMat.SetTexture("_RenderTexture", texture);
     }
 
     private void LateUpdate()

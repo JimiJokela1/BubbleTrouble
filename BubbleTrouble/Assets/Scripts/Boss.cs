@@ -267,7 +267,7 @@ public class Boss : MonoBehaviour
         }
 
         gameObject.SetActive(false);
-
-        //TODO: Trigger stage end
+        
+        FindFirstObjectByType<GameOverUI>().ShowVictory();
     }
 }

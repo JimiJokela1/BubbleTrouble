@@ -9,7 +9,7 @@ public class EnemyShot : MonoBehaviour
 
     public AudioClip popSound;
 
-    private void Start()
+    private void Awake()
     {
         bubbleMat = GetComponent<MeshRenderer>().material;
     }
@@ -67,7 +67,7 @@ public class EnemyShot : MonoBehaviour
         while (fade < 1)
         {
             fade += Time.deltaTime * 10;
-            bubbleMat.SetFloat("_Dissolve", fade);
+            bubbleMat?.SetFloat("_Dissolve", fade);
             yield return null;
         }
 

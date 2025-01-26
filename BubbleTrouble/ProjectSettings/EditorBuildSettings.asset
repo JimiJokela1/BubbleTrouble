@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: d75cf80129c56b945b8687695433bc8d
-  - enabled: 1
-    path: Assets/Scenes/Main2.unity
-    guid: 38d23033e6e018d4995583444a5358a4
-  - enabled: 1
     path: "Assets/Scenes/Kent\xE4t/Level_0.unity"
     guid: 09c09878bef6d9b44808d8cec7d76d37
   - enabled: 1
